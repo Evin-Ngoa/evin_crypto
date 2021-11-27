@@ -6,20 +6,27 @@ import { Link } from 'react-router-dom';
 import Spinner from './Spinner';
 import News from './News';
 import Cryptocurrencies from './Cryptocurrencies';
+import { useGetCryptosQuery } from '../services/cryptoRapidApi';
 
 const { Title } = Typography;
 
 const Homepage = () => {
+    const { data, isFetching } = useGetCryptosQuery(10);
+    const dataStats = data?.data?.stats;
+
+    console.log(data)
+
+    if (isFetching) return <Spinner />;
+
     return (
         <>
-            <Title level={2} className="heading">Global Crypto Statistics</Title>
+            <Title level={2} className="heading">Global Crypto Statistics in Total</Title>
             <Row gutter={[32, 32]}>
-                <Col span={12}><Statistic title="Total CryptoCurrencies" value={5} /></Col>
-                <Col span={12}><Statistic title="Total Exchanges" value={6} /></Col>
-                <Col span={12}><Statistic title="Total Market Cap:" value={7} /></Col>
-                <Col span={12}><Statistic title="Total 24h Volume" value={8} /></Col>
-                <Col span={12}><Statistic title="Total Cryptocurrencies" value={9} /></Col>
-                <Col span={12}><Statistic title="Total Markets" value={10} /></Col>
+                <Col span={12}><Statistic title="Cryptocurrencies" value={dataStats.total} /></Col>
+                <Col span={12}><Statistic title="Market Cap:" value={`$${millify(dataStats.totalMarketCap)}`} /></Col>
+                <Col span={12}><Statistic title="24h Volume" value={`$${millify(dataStats.total24hVolume)}`} /></Col>
+                <Col span={12}><Statistic title="Exchanges" value={millify(dataStats.totalExchanges)} /></Col>
+                <Col span={12}><Statistic title="Markets" value={millify(dataStats.totalMarkets)} /></Col>
             </Row>
             <div className="home-heading-container">
                 <Title level={2} className="home-title">Top 10 Cryptos In The World</Title>
