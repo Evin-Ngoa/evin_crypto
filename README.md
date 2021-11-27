@@ -10,6 +10,17 @@ A cryptocurrency react app with data about all cryptocurrencies markets, exchang
 - Learn Project deployment to netlify through github.
 - Git : Use of multiple branches and pull requests.
 
+### Dependencies
+1. antd - For Designing
+2. @ant-design/icons - For Icons
+3. @reduxjs/toolkit & react-redux - Manage Redux (State Management)
+4. axios - API Request
+5. chart.js - create charts
+6. html-react-parser - Parse HTML Data
+7. millify - Transform extemely large numbers into readable strings
+8. moments - Pass time and dates
+9. react-chartjs-2 - Render charts from charts.js 
+
 ## Running the project
 
 ### `Git clone`
