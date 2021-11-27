@@ -20,6 +20,7 @@ A cryptocurrency react app with data about all cryptocurrencies markets, exchang
 7. millify - Transform extemely large numbers into readable strings
 8. moments - Pass time and dates
 9. react-chartjs-2 - Render charts from charts.js 
+10. react-router-dom - URLs
 
 ## Running the project
 
