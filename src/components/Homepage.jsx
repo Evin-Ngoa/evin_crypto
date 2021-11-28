@@ -20,25 +20,28 @@ const Homepage = () => {
 
     return (
         <>
-            <Title level={2} className="heading">Global Crypto Statistics in Total</Title>
+            <Title level={4} className="heading">Global Crypto Statistics in Total</Title>
             <div className="code-box-demo">
-                <Row gutter={[32, 32]}>
-                    <Col span={12}><Statistic title="Cryptocurrencies" value={dataStats.total} /></Col>
-                    <Col span={12}><Statistic title="Market Cap:" value={`$${millify(dataStats.totalMarketCap)}`} /></Col>
-                    <Col span={12}><Statistic title="24h Volume" value={`$${millify(dataStats.total24hVolume)}`} /></Col>
-                    <Col span={12}><Statistic title="Exchanges" value={millify(dataStats.totalExchanges)} /></Col>
-                    <Col span={12}><Statistic title="Markets" value={millify(dataStats.totalMarkets)} /></Col>
+                <Row gutter={[8, 8]}>
+                    <Col span={8}><Statistic title="Cryptocurrencies" value={dataStats.total}  valueStyle={{ color: '#321fdb' }} /></Col>
+                    <Col span={8}><Statistic title="Market Cap:" value={`$${millify(dataStats.totalMarketCap)}`}  valueStyle={{ color: '#321fdb' }} /></Col>
+                    <Col span={8}><Statistic title="24h Volume" value={`$${millify(dataStats.total24hVolume)}`} valueStyle={{ color: '#321fdb' }}/></Col>
                 </Row>
             </div>
-
+            <div className="code-box-demo">
+                <Row gutter={[8, 8]}>
+                    <Col span={8}><Statistic title="Exchanges" value={millify(dataStats.totalExchanges)}  valueStyle={{ color: '#321fdb' }}/></Col>
+                    <Col span={8}><Statistic title="Markets" value={millify(dataStats.totalMarkets)} valueStyle={{ color: '#321fdb' }} /></Col>
+                </Row>
+            </div>
             <div className="home-heading-container">
-                <Title level={2} className="home-title">Top 10 Cryptos In The World</Title>
-                <Title level={3} className="show-more"><Link to="/cryptocurrencies">Show more</Link></Title>
+                <Title level={4} className="home-title">Top 10 Cryptos In The World</Title>
+                <Title level={5} className="show-more"><Link to="/cryptocurrencies">View All</Link></Title>
             </div>
             <Cryptocurrencies featured />
             <div className="home-heading-container">
-                <Title level={2} className="home-title">Latest Crypto News</Title>
-                <Title level={3}><Link to="/news">Show more</Link></Title>
+                <Title level={4} className="home-title">Latest Crypto News</Title>
+                <Title level={5}><Link to="/news">View All</Link></Title>
             </div>
             <News featured />
         </>
