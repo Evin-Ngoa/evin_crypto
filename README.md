@@ -18,7 +18,7 @@ A cryptocurrency react app with data about all cryptocurrencies markets, exchang
 5. chart.js - create charts
 6. html-react-parser - Parse HTML Data
 7. millify - Transform extemely large numbers into readable strings
-8. moments - Pass time and dates
+8. moments - Parse time and dates
 9. react-chartjs-2 - Render charts from charts.js 
 10. react-router-dom - URLs
 
@@ -37,3 +37,5 @@ The page will reload if you make edits.\
 You will also see any lint errors in the console.
 
 # Enjoy!
+
+video 1:10:47

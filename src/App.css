@@ -26,6 +26,8 @@ a:hover{
 .navbar{
     flex: 0.2;
     background-color: rgb(0, 21, 41);
+    /* background: linear-gradient(to top, #5768f3, #1c45ef); */
+    
 }
 
 .main{
@@ -43,6 +45,8 @@ a:hover{
     height: 100vh;
     margin: 0px;
     background-color: rgb(0, 21, 41);
+    /* background: linear-gradient(to top, #5768f3, #1c45ef); */
+    
     width: 265px;
 }
 
@@ -377,4 +381,9 @@ width: 70%;
     flex-direction: column;
     padding: 20px;
     align-items: center;
+}
+
+.ant-card-body {
+    /* background: linear-gradient(to top, #5768f3, #1c45ef);
+    color: #fff; */
 }
