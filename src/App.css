@@ -666,3 +666,7 @@ a:hover{
 .news-card {
     background: #fff !important;
 }
+
+.ant-collapse > .ant-collapse-item > .ant-collapse-header {
+    display: block !important;
+}
