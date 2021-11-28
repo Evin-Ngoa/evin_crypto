@@ -374,7 +374,7 @@ a:hover{
 }
 .select-timeperiod{
     width: 200px !important;
-    margin-top: 20px !important;
+    margin: 20px 0px !important;
 }
 
 .footer {
@@ -647,7 +647,7 @@ a:hover{
     color:#722ed1
 }
 
-.ant-card {
+.currencies-card {
     background: linear-gradient( 
         45deg,#321fdb 0%,#1f1498 100%)!important;
             color: #fff;
@@ -655,7 +655,7 @@ a:hover{
     color: #fff !important;
 }
 
-.ant-card-head {
+.currencies-card .ant-card-head {
     color: #fff !important;
 }
 
