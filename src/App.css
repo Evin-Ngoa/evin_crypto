@@ -70,8 +70,12 @@ a:hover{
     right: 10px !important;
     top: 25px !important;
     font-size: 1.2rem !important;
-    background-color: var(--bg-secondary) !important;
+    background-color: #001529 !important;
     border: none !important;
+}
+
+.ant-btn {
+    color: #fff !important;
 }
 
 .loader{
