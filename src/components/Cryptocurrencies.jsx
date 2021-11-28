@@ -5,8 +5,8 @@ import { Card, Row, Col, Input } from 'antd';
 import { useGetCryptosQuery } from '../services/cryptoRapidApi';
 import Spinner from './Spinner';
 
-const Cryptocurrencies = ({ summary }) => {
-    const count = summary ? 10 : 100;
+const Cryptocurrencies = ({ featured }) => {
+    const count = featured ? 10 : 100;
     const { data: cryptosList, isFetching } = useGetCryptosQuery(count);
     const [cryptos, setCryptos] = useState(cryptosList?.data?.coins);
     const [searchTerm, setSearchTerm] = useState('');
@@ -25,9 +25,9 @@ const Cryptocurrencies = ({ summary }) => {
 
     return (
         <>
-            {!summary && (
+            {!featured && (
                 <div className="search-crypto">
-                <Input placeholder="Search Cryptocurrency" onChange={(e) => setSearchTerm(e.target.value.toLowerCase())} />
+                    <Input placeholder="Search Cryptocurrency" onChange={(e) => setSearchTerm(e.target.value.toLowerCase())} />
                 </div>
             )}
             <Row gutter={[32, 32]} className="crypto-card-container">

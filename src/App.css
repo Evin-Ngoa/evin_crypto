@@ -305,7 +305,8 @@ a:hover{
     justify-content: space-between !important;
 }
 .news-title{
-width: 70%;
+    width: 70%;
+    padding: 0 10px;
 }
 
 .news-image-container .img{
@@ -656,4 +657,8 @@ width: 70%;
 
 .ant-card-head {
     color: #fff !important;
+}
+
+.news-card {
+    background: #fff !important;
 }
