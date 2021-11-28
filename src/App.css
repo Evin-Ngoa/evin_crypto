@@ -6,6 +6,7 @@
     --pink: #0071bd;
     --light-blue: #e6f7ff;
     --border: #d9d9d9;
+    --elevation-base-color: 60, 75, 100;
 }
 
 * {
@@ -474,6 +475,7 @@ width: 70%;
     color:#000000d9;
     border-bottom:1px solid #f0f0f0;
     background-color: #fff;
+    box-shadow: 0 1 px 1 px 0 rgba(var(--elevation-base-color),.14),0 2 px 1 px -1 px rgba(var(--elevation-base-color),.12),0 1 px 3 px 0 rgba(var(--elevation-base-color),.20);
 }
 .code-box iframe{
     width:100%;
@@ -642,4 +644,16 @@ width: 70%;
 }
 .code-box-debug .code-box-title a{
     color:#722ed1
+}
+
+.ant-card {
+    background: linear-gradient( 
+        45deg,#321fdb 0%,#1f1498 100%)!important;
+            color: #fff;
+    border-radius: 0.25rem !important;
+    color: #fff !important;
+}
+
+.ant-card-head {
+    color: #fff !important;
 }
