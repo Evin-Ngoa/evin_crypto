@@ -27,9 +27,14 @@ a:hover{
 .navbar{
     flex: 0.2;
     background-color: rgb(0, 21, 41);
+    /* background-color: #3c4b64; */
     /* background: linear-gradient(to top, #5768f3, #1c45ef); */
     
 }
+
+/* .ant-menu.ant-menu-dark {
+    background: #3c4b64 !important;
+} */
 
 .main{
     flex: 0.8;
@@ -45,6 +50,7 @@ a:hover{
     margin: 10px;
     height: 100vh;
     margin: 0px;
+    /* background-color: #3c4b64; */
     background-color: rgb(0, 21, 41);
     /* background: linear-gradient(to top, #5768f3, #1c45ef); */
     

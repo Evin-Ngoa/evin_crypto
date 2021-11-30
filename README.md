@@ -1,4 +1,6 @@
 # Evin Crypto Analytics Web
+### [Live Site](https://evin-crypto.netlify.app)
+
 A cryptocurrency react app with data about all cryptocurrencies markets, exchanges and popular Cryptocurrency news.
 
 ### Project Goal
